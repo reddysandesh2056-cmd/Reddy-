@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="REDDY HARVESTERS - Modern agricultural harvesting machines, services, parts and support.">
+<title>REDDY HARVESTERS | Modern Farming Solutions</title>
+<style>
+:root{--green:#176b3a;--dark:#10251a;--lime:#a8d62b;--cream:#f5f8f1;--white:#fff;--muted:#637067;--shadow:0 15px 40px rgba(16,37,26,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(0,0,0,.08)}
+.nav{max-width:1200px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;font-size:1.25rem;color:var(--green);letter-spacing:.5px}
+.logo span{color:var(--lime)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-weight:700;font-size:.92rem}
+nav a:hover{color:var(--green)}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:12px 20px;border-radius:8px;font-weight:800;border:0;cursor:pointer}
+.btn:hover{background:#0e4d29}
+.btn.alt{background:var(--lime);color:var(--dark)}
+.hero{min-height:650px;display:grid;place-items:center;padding:80px 22px;background:
+linear-gradient(110deg,rgba(8,31,17,.93),rgba(23,107,58,.72)),
+url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-inner{max-width:1200px;width:100%;color:#fff}
+.badge{display:inline-block;background:rgba(168,214,43,.18);border:1px solid rgba(168,214,43,.55);padding:7px 12px;border-radius:30px;color:#dfff82;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(2.7rem,7vw,5.8rem);line-height:.98;max-width:850px;margin-bottom:22px}
+.hero p{max-width:680px;font-size:1.15rem;color:#e9f1eb;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:80px 22px}
+.container{max-width:1200px;margin:auto}
+.section-head{max-width:720px;margin-bottom:35px}
+.section-head h2{font-size:2.2rem;line-height:1.15;margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:16px;padding:26px;box-shadow:var(--shadow)}
+.card h3{margin:10px 0 8px}
+.card p{color:var(--muted)}
+.icon{font-size:2rem}
+.products{background:#fff}
+.product{overflow:hidden;padding:0}
+.product img{width:100%;height:220px;object-fit:cover}
+.product .body{padding:22px}
+.specs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.spec{font-size:.78rem;background:#edf5e8;padding:6px 9px;border-radius:20px;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.stat{background:var(--dark);color:#fff;border-radius:14px;padding:25px;text-align:center}
+.stat strong{font-size:2rem;color:var(--lime);display:block}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:var(--green);color:#fff;border-radius:20px;padding:40px;min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.about-box h2{font-size:2.5rem;line-height:1.1;margin-bottom:15px}
+ul{list-style:none}
+li{margin:9px 0}
+li::before{content:"✓";color:var(--lime);font-weight:900;margin-right:9px}
+.services{background:#eaf2e6}
+.cta{background:linear-gradient(120deg,var(--dark),var(--green));color:#fff;text-align:center}
+.cta h2{font-size:2.7rem;margin-bottom:10px}
+.cta p{color:#dce8df;max-width:700px;margin:0 auto 25px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+form{background:#fff;padding:28px;border-radius:16px;box-shadow:var(--shadow)}
+input,textarea,select{width:100%;padding:13px;margin:7px 0 12px;border:1px solid #d5ddd5;border-radius:8px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+.contact-info{background:var(--dark);color:#fff;border-radius:16px;padding:30px}
+.contact-info p{margin:14px 0;color:#d9e5dd}
+footer{background:#09150e;color:#dbe7de;padding:35px 22px}
+.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.small{font-size:.88rem;color:#9fb1a5}
+.mobile-menu{display:none}
+@media(max-width:800px){
+nav{display:none}.mobile-menu{display:block;background:none;border:0;font-size:1.6rem}
+.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}
+.hero{min-height:590px}section{padding:60px 18px}
+}
+@media(max-width:480px){.stats{grid-template-columns:1fr}h1{font-size:3rem}.nav{padding:12px 15px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<a class="logo" href="#home">REDDY <span>HARVESTERS</span></a>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#products">Harvesters</a>
+<a href="#features">Features</a><a href="#services">Services</a><a href="#contact">Contact</a>
+</nav>
+<button class="mobile-menu" aria-label="Menu">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="badge">🌾 NEXT-GENERATION FARMING TECHNOLOGY</div>
+<h1>Harvest More.<br>Work Smarter.</h1>
+<p>REDDY HARVESTERS provides efficient, reliable and farmer-focused harvesting solutions designed to improve productivity, reduce harvesting time and deliver dependable field performance.</p>
+<div class="actions">
+<a class="btn alt" href="#products">Explore Harvesters</a>
+<a class="btn" href="#contact">Get a Quote</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div>
+<div class="section-head">
+<h2>Built for the Indian farm.</h2>
+<p>Our focus is practical agricultural machinery that combines strong field performance, operator comfort, serviceability and efficient harvesting.</p>
+</div>
+<ul>
+<li>High productivity and faster harvesting</li>
+<li>Fuel-efficient engineering</li>
+<li>Easy operation and maintenance</li>
+<li>Durable components for demanding field conditions</li>
+<li>Farmer-focused after-sales support</li>
+</ul>
+</div>
+<div class="about-box">
+<h2>REDDY HARVESTERS</h2>
+<p>Modern machinery for a more productive agricultural future.</p>
+</div>
+</div>
+</section>
+
+<section class="products" id="products">
+<div class="container">
+<div class="section-head">
+<h2>Our Harvesting Solutions</h2>
+<p>Showcase your available models here. Replace the sample model names, specifications and images with your actual REDDY HARVESTERS products.</p>
+</div>
+<div class="grid">
+<article class="card product">
+<img src="https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=1000&q=80" alt="Agricultural harvester in field">
+<div class="body"><h3>REDDY CropMaster 100</h3><p>High-efficiency harvesting platform for large-scale field operations.</p>
+<div class="specs"><span class="spec">High Capacity</span><span class="spec">Low Fuel Use</span><span class="spec">Easy Service</span></div><a class="btn" href="#contact">Request Details</a></div>
+</article>
+<article class="card product">
+<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1000&q=80" alt="Tractor working in agricultural field">
+<div class="body"><h3>REDDY FieldPro</h3><p>Compact and versatile solution for efficient harvesting in varied field conditions.</p>
+<div class="specs"><span class="spec">Compact</span><span class="spec">Powerful</span><span class="spec">Operator Friendly</span></div><a class="btn" href="#contact">Request Details</a></div>
+</article>
+<article class="card product">
+<img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a8f7b?auto=format&fit=crop&w=1000&q=80" alt="Agricultural machinery">
+<div class="body"><h3>REDDY HarvestPro</h3><p>Designed for dependable output, straightforward controls and long working life.</p>
+<div class="specs"><span class="spec">Heavy Duty</span><span class="spec">Reliable</span><span class="spec">Efficient</span></div><a class="btn" href="#contact">Request Details</a></div>
+</article>
+</div>
+<div class="stats">
+<div class="stat"><strong>01</strong>Farmer First</div>
+<div class="stat"><strong>24/7</strong>Enquiry Access</div>
+<div class="stat"><strong>100%</strong>Service Focus</div>
+<div class="stat"><strong>∞</strong>Field Potential</div>
+</div>
+</div>
+</section>
+
+<section id="features">
+<div class="container">
+<div class="section-head">
+<h2>Key Website & Product Features</h2>
+<p>A complete single-page business website structure for a harvester company.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">⚙️</div><h3>Advanced Engineering</h3><p>Efficient mechanical systems, robust construction and practical controls.</p></div>
+<div class="card"><div class="icon">🌾</div><h3>High Productivity</h3><p>Designed to cover more field area in less time and improve harvesting efficiency.</p></div>
+<div class="card"><div class="icon">⛽</div><h3>Fuel Efficiency</h3><p>Engineering focused on productive field operation and economical running costs.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Easy Maintenance</h3><p>Service-friendly layout and accessible maintenance points.</p></div>
+<div class="card"><div class="icon">👨‍🌾</div><h3>Operator Comfort</h3><p>Simple controls, visibility and ergonomic operation for long working hours.</p></div>
+<div class="card"><div class="icon">📡</div><h3>Smart Support</h3><p>Enquiry, service-request and customer-support pathways built into the website.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Mobile Responsive</h3><p>Optimized for smartphones, tablets and desktop screens.</p></div>
+<div class="card"><div class="icon">📍</div><h3>Dealer / Service Network</h3><p>Dedicated section for locations, dealers, service centres and contact details.</p></div>
+<div class="card"><div class="icon">📄</div><h3>Brochure & Downloads</h3><p>Add PDF brochures, technical specifications, manuals and product catalogues.</p></div>
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-head">
+<h2>Services & Support</h2>
+<p>Everything customers need before and after purchasing a harvester.</p>
+</div>
+<div class="grid">
+<div class="card"><h3>🚜 Machine Sales</h3><p>Product consultation, model selection and quotation support.</p></div>
+<div class="card"><h3>🔧 Service & Repairs</h3><p>Scheduled maintenance, troubleshooting and repair support.</p></div>
+<div class="card"><h3>🧩 Genuine Spare Parts</h3><p>Parts enquiry and replacement support for machine uptime.</p></div>
+<div class="card"><h3>🎓 Operator Training</h3><p>Training resources for safe and efficient machine operation.</p></div>
+<div class="card"><h3>📞 Customer Support</h3><p>Quick contact options for sales, service and technical enquiries.</p></div>
+<div class="card"><h3>📍 Dealer Locator</h3><p>Add your authorized dealer and service-centre locations.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Ready for a better harvest?</h2>
+<p>Talk to REDDY HARVESTERS about the right machine for your farming operation.</p>
+<a class="btn alt" href="#contact">Contact REDDY HARVESTERS</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<h2>Get in Touch</h2>
+<p>Use this form for product enquiries, quotations, dealer enquiries or service requests.</p>
+</div>
+<div class="contact">
+<form onsubmit="sendEnquiry(event)">
+<label>Name</label><input id="name" required placeholder="Your name">
+<label>Phone</label><input id="phone" type="tel" required placeholder="+91 XXXXX XXXXX">
+<label>Enquiry Type</label>
+<select id="type"><option>Product Enquiry</option><option>Price / Quotation</option><option>Dealer Enquiry</option><option>Service Support</option><option>Spare Parts</option></select>
+<label>Message</label><textarea id="message" placeholder="Tell us what you need"></textarea>
+<button class="btn" type="submit">Send Enquiry</button>
+</form>
+<div class="contact-info">
+<h2>REDDY HARVESTERS</h2>
+<p>🌾 Agricultural Machinery & Harvesting Solutions</p>
+<p>📞 Phone: +91 XXXXXXXXXX</p>
+<p>✉️ Email: info@reddyharvesters.com</p>
+<p>📍 Location: Add your office / factory address</p>
+<p>🕘 Business Hours: Monday–Saturday, 9:00 AM–6:00 PM</p>
+<hr style="border:0;border-top:1px solid #3b5747;margin:25px 0">
+<p class="small">Replace the placeholder contact information with your official company details before publishing.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-inner">
+<div><strong>REDDY HARVESTERS</strong><br><span class="small">Harvest More. Work Smarter.</span></div>
+<div class="small">© 2026 REDDY HARVESTERS. All Rights Reserved.</div>
+</div>
+</footer>
+
+<script>
+function sendEnquiry(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const type=document.getElementById('type').value;
+  const message=document.getElementById('message').value.trim();
+  const subject=encodeURIComponent("REDDY HARVESTERS - "+type);
+  const body=encodeURIComponent("Name: "+name+"\\nPhone: "+phone+"\\nEnquiry: "+type+"\\nMessage: "+message);
+  window.location.href="mailto:info@reddyharvesters.com?subject="+subject+"&body="+body;
+}
+</script>
+</body>
+</html>
